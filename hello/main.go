@@ -56,7 +56,7 @@ var (
 func main() {
 	http.HandleFunc("/", handler)
 
-	parts := []string{"", "8080"}
+	parts := []string{"", "80"}
 
 	for i, keys := range [][]string{{"VCAP_APP_HOST", "HOST"}, {"VCAP_APP_PORT", "PORT"}} {
 		for _, key := range keys {
